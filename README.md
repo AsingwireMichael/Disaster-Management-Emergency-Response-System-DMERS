@@ -2,7 +2,7 @@
 
 A comprehensive, full-stack emergency response management system built with Django, PostgreSQL, MongoDB, and React.
 
-## 🚀 Features
+## Features
 
 ### Core Functionality
 - **Incident Management**: Report, track, and manage emergency incidents
@@ -26,7 +26,7 @@ A comprehensive, full-stack emergency response management system built with Djan
 - **Real-time Updates**: WebSocket support for live updates
 - **Mobile Responsive**: Modern React frontend with Tailwind CSS
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
@@ -41,7 +41,7 @@ A comprehensive, full-stack emergency response management system built with Djan
                        └─────────────────┘
 ```
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Python 3.11+
 - Node.js 16+
@@ -50,7 +50,7 @@ A comprehensive, full-stack emergency response management system built with Djan
 - MongoDB 7.0+
 - Redis 7.0+
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Clone the Repository
 
@@ -111,7 +111,7 @@ npm start
 - **Admin Panel**: http://localhost:8000/admin/
 - **API Documentation**: http://localhost:8000/api/docs/
 
-## 🔐 Default Credentials
+## Default Credentials
 
 After running the seed data script:
 
@@ -120,7 +120,7 @@ After running the seed data script:
 - **Responder**: `medic1@dmers.org` / `responder123`
 - **Citizen**: `citizen1@dmers.org` / `citizen123`
 
-## 📊 Database Schema
+## Database Schema
 
 ### PostgreSQL (Operational Data)
 
@@ -149,7 +149,7 @@ After running the seed data script:
 - `situation_reports` - Responder situation reports
 - `telemetry` - Unit GPS and sensor data (TTL indexed)
 
-## 🔌 API Endpoints
+## API Endpoints
 
 ### Authentication
 - `POST /api/auth/register/` - User registration
@@ -186,7 +186,7 @@ After running the seed data script:
 - `GET /api/xml/schema/` - Get XSD schema
 - `POST /api/xml/validate/` - Validate XML content
 
-## 🗄️ ETL Pipeline
+## ETL Pipeline
 
 The system includes a comprehensive ETL pipeline for populating the data warehouse:
 
@@ -202,7 +202,7 @@ from datetime import date
 run_etl_job(date(2024, 1, 1), date(2024, 1, 31))
 ```
 
-## 🗺️ Geographic Features
+## Geographic Features
 
 - **PostGIS Integration**: Advanced spatial queries and analysis
 - **Geospatial Indexing**: Efficient location-based searches
@@ -225,7 +225,7 @@ run_etl_job(date(2024, 1, 1), date(2024, 1, 31))
 - **StatusBadge**: Incident status indicators
 - **ChartComponents**: Analytics visualizations
 
-## 🔧 Configuration
+## Configuration
 
 ### Environment Variables
 
@@ -261,7 +261,7 @@ Key settings in `dmers/settings.py`:
 - **CORS Settings**: Frontend integration
 - **Authentication**: Token-based authentication
 
-## 🧪 Testing
+## Testing
 
 ### Backend Tests
 
@@ -282,7 +282,7 @@ cd frontend
 npm test
 ```
 
-## 📈 Performance Optimization
+## Performance Optimization
 
 ### Database Optimization
 - **Indexing**: Strategic indexes on frequently queried fields
@@ -294,7 +294,7 @@ npm test
 - **Database Query Caching**: Frequently accessed data
 - **Frontend Caching**: API response caching
 
-## 🚨 Production Deployment
+## Production Deployment
 
 ### Security Considerations
 - **HTTPS**: SSL/TLS encryption
@@ -309,7 +309,7 @@ npm test
 - **CDN**: Static file delivery
 - **Monitoring**: Application performance monitoring
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -317,11 +317,11 @@ npm test
 4. Add tests for new functionality
 5. Submit a pull request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 🆘 Support
+## Support
 
 For support and questions:
 
@@ -329,7 +329,7 @@ For support and questions:
 - **Documentation**: Check the API docs at `/api/docs/`
 - **Community**: Join our discussion forum
 
-## 🔮 Roadmap
+## Roadmap
 
 ### Phase 2 Features
 - **Real-time Notifications**: WebSocket-based alerts
@@ -344,7 +344,7 @@ For support and questions:
 - **Advanced Analytics**: Machine learning insights
 - **Disaster Simulation**: Training and planning tools
 
-## 📊 System Requirements
+## System Requirements
 
 ### Minimum Requirements
 - **CPU**: 2 cores
@@ -358,7 +358,7 @@ For support and questions:
 - **Storage**: 100GB+ SSD
 - **Network**: 1Gbps+
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
