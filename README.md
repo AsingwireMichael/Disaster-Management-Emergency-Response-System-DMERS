@@ -209,7 +209,7 @@ run_etl_job(date(2024, 1, 1), date(2024, 1, 31))
 - **Distance Calculations**: Automatic proximity analysis
 - **Boundary Management**: Geographic area definitions
 
-## 📱 Frontend Components
+## Frontend Components
 
 ### Core Pages
 - **Dashboard**: Overview with live map and key metrics
@@ -392,7 +392,7 @@ rm -rf node_modules package-lock.json
 npm install
 ```
 
-## 📚 Additional Resources
+## Additional Resources
 
 - [Django Documentation](https://docs.djangoproject.com/)
 - [PostGIS Documentation](https://postgis.net/documentation/)
