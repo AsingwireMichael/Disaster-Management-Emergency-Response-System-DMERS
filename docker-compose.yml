@@ -1,0 +1,61 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgis/postgis:15-3.3
+    environment:
+      POSTGRES_DB: dmers_db
+      POSTGRES_USER: dmers_user
+      POSTGRES_PASSWORD: dmers_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - dmers_network
+
+  mongodb:
+    image: mongo:7.0
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: dmers_user
+      MONGO_INITDB_ROOT_PASSWORD: dmers_password
+      MONGO_INITDB_DATABASE: dmers_mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      - dmers_network
+
+  redis:
+    image: redis:7.2-alpine
+    ports:
+      - "6379:6379"
+    networks:
+      - dmers_network
+
+  django:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - postgres
+      - mongodb
+      - redis
+    environment:
+      - DATABASE_URL=postgresql://dmers_user:dmers_password@postgres:5432/dmers_db
+      - MONGODB_URL=mongodb://dmers_user:dmers_password@mongodb:27017/dmers_mongo
+      - REDIS_URL=redis://redis:6379/0
+    networks:
+      - dmers_network
+
+volumes:
+  postgres_data:
+  mongo_data:
+
+networks:
+  dmers_network:
+    driver: bridge
