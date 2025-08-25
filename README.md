@@ -342,30 +342,12 @@ For support and questions:
 
 ### Phase 2 Features
 - **Real-time Notifications**: WebSocket-based alerts
-- **Mobile App**: Native mobile applications
 - **AI Integration**: Predictive analytics and automation
-- **IoT Integration**: Sensor data integration
 - **Advanced Reporting**: Custom report builder
-
-### Phase 3 Features
 - **Multi-tenant Support**: Organization isolation
 - **API Marketplace**: Third-party integrations
 - **Advanced Analytics**: Machine learning insights
 - **Disaster Simulation**: Training and planning tools
-
-## System Requirements
-
-### Minimum Requirements
-- **CPU**: 2 cores
-- **RAM**: 4GB
-- **Storage**: 20GB
-- **Network**: 100Mbps
-
-### Recommended Requirements
-- **CPU**: 4+ cores
-- **RAM**: 8GB+
-- **Storage**: 100GB+ SSD
-- **Network**: 1Gbps+
 
 ## Troubleshooting
 
