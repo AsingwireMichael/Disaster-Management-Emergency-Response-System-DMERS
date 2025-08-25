@@ -3,13 +3,13 @@
 A comprehensive, full-stack emergency response management system built with Django, PostgreSQL, MongoDB, and React.
 
 ## Group Memmbers
-- **191250 - Ng'ang'a Allan Ngugi
-- **152585 - Vansh Panara
-- **192483 - Michael Asingwire
-- **192992 - Ziki Mtula
-- **189728 - Boniface Mwangi
-- **180761 - Macharia Daniel
-- **184304 - Emmanuel Kisoso
+- 191250 - Ng'ang'a Allan Ngugi
+- 152585 - Vansh Panara
+- 192483 - Michael Asingwire
+- 192992 - Ziki Mtula
+- 189728 - Boniface Mwangi
+- 180761 - Macharia Daniel
+- 184304 - Emmanuel Kisoso
 
 ## Features
 
